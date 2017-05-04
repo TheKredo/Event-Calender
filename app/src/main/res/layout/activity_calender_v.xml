@@ -8,24 +8,39 @@
     android:weightSum="1"
     tools:context="com.sukesh.agnite.calenderv.CalenderVActivity">
 
-    <CalendarView
-        android:id="@+id/cal"
-        android:layout_width="match_parent"
-        android:layout_height="191dp"
-        android:layout_weight="0.46"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp"></CalendarView>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:layout_weight="0.1"
+        android:orientation="vertical">
 
-    <ListView
+        <CalendarView
+            android:id="@+id/cal"
+            android:layout_width="match_parent"
+            android:layout_height="313dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"></CalendarView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:layout_weight="16.32" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/listView"/>
+        android:layout_height="96dp"
+        android:orientation="vertical"
+        android:descendantFocusability="afterDescendants"
+        android:layout_weight="0.80">
 
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="414dp"
+            android:layout_height="match_parent" />
 
+    </LinearLayout>
 </LinearLayout>

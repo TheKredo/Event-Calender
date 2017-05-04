@@ -132,16 +132,16 @@ public class CalenderVActivity extends AppCompatActivity implements EasyPermissi
                 mCallApiButton.setEnabled(true);
             }
         });
-        /*activityLayout.addView(mCallApiButton);
+       // activityLayout.addView(mCallApiButton);
 
         mOutputText = new TextView(this);
-        mOutputText.setLayoutParams(tlp);
+        //mOutputText.setLayoutParams(tlp);
         mOutputText.setPadding(16, 16, 16, 16);
         mOutputText.setVerticalScrollBarEnabled(true);
         mOutputText.setMovementMethod(new ScrollingMovementMethod());
         mOutputText.setText(
                 "Click the \'" + BUTTON_TEXT +"\' button to test the API.");
-        activityLayout.addView(mOutputText);*/
+        //activityLayout.addView(mOutputText);
 
         mProgress = new ProgressDialog(this);
         mProgress.setMessage("Calling Google Calendar API ...");
